@@ -20,26 +20,31 @@ class MoodSegue: UIStoryboardSegue {
     
     private func setDestinationValues(mood: Mood) {
         var advice : String?
+        var header : String?
         switch (mood) {
         case .Good:
             advice = AdviceEntries.getRandomEntryFor(key: "Good", seen: [])
+            header = AdviceEntries.getHeaderFor(key: "Good")
         case .Bad:
             advice = AdviceEntries.getRandomEntryFor(key: "Bad", seen: [])
+            header = AdviceEntries.getHeaderFor(key: "Bad")
         case .Angry:
-            advice = AdviceEntries.getRandomEntryFor(key: "Good", seen: [])
+            advice = AdviceEntries.getRandomEntryFor(key: "Angry", seen: [])
+            header = AdviceEntries.getHeaderFor(key: "Angry")
         case .Grumpy:
-            advice = AdviceEntries.getRandomEntryFor(key: "Good", seen: [])
+            advice = AdviceEntries.getRandomEntryFor(key: "Grumpy", seen: [])
+            header = AdviceEntries.getHeaderFor(key: "Grumpy")
         case .Overwhelmed:
-            advice = AdviceEntries.getRandomEntryFor(key: "Good", seen: [])
+            advice = AdviceEntries.getRandomEntryFor(key: "Overwhelmed", seen: [])
+            header = AdviceEntries.getHeaderFor(key: "Overwhelmed")
         case .Exhausted:
-            advice = AdviceEntries.getRandomEntryFor(key: "Good", seen: [])
+            advice = AdviceEntries.getRandomEntryFor(key: "Exhausted", seen: [])
+            header = AdviceEntries.getHeaderFor(key: "Exhausted")
         default:
             break;
         }
         
-        print(advice!)
-        
-//        (destination as! AdviceViewController).setHeader(text: "Here's some advice for you:")
+        (destination as! AdviceViewController).setHeader(text: header!)
         (destination as! AdviceViewController).setAdvice(text: advice!)
         animatePush()
         

@@ -19,7 +19,7 @@ class AdviceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        headerLabel.text = headerText
         adviceLabel.text = labelText
         // Do any additional setup after loading the view.
     }
@@ -30,7 +30,11 @@ class AdviceViewController: UIViewController {
     }
     
     public func setHeader(text: String?) {
-        headerLabel.text = text
+        if let newtext = text {
+            headerText = newtext
+        } else {
+            headerText = "Try this: "
+        }
     }
     
     public func setAdvice(text: String?) {

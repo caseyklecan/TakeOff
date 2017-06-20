@@ -7,3 +7,14 @@ What _this_ TakeOff app does is as follows:
 1. Rate your mood (choose from Good, Bad, Angry, Exhausted, Overwhelmed, and Grumpy)
 2. Give you advice based on the mood you've input
 3. For now, that is all :) 
+
+
+### To Do
+- [ ] add gradients to view controllers (programmatically? background image?)
+- [ ] import a custom font to use
+- [ ] create launch screen
+- [ ] create app icon
+- [ ] switch mood buttons to be emojis
+- [ ] keep track of which moments of advice the user has seen / not
+- [ ] get advice options from a server / backend??
+- [ ] track user data in a way that could be useful ?? 

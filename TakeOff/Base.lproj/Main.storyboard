@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Query View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QueryViewController" customModule="TakeOff" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wf-W5-vpR">
+                                <rect key="frame" x="58" y="60" width="259" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AT-Gc-Fzs">
+                                <rect key="frame" x="167.5" y="234" width="39" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Bad"/>
+                                <connections>
+                                    <action selector="feelBad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjE-S0-mpU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAH-Uv-BfR">
+                                <rect key="frame" x="148" y="303" width="79" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Grumpy"/>
+                                <connections>
+                                    <action selector="feelGrumpy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0w-9e-MlJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIq-pe-89Y">
+                                <rect key="frame" x="158" y="372" width="59" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Angry"/>
+                                <connections>
+                                    <action selector="feelMad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jft-Gk-e9N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-CJ-iFP">
+                                <rect key="frame" x="119" y="441" width="137" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Overwhelmed"/>
+                                <connections>
+                                    <action selector="feelSwamped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIT-zO-VXa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-0k-XQ0">
+                                <rect key="frame" x="135.5" y="510" width="103" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Exhausted"/>
+                                <connections>
+                                    <action selector="feelTired:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXT-F3-PI4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsh-XE-RFS">
+                                <rect key="frame" x="160" y="165" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Good"/>
+                                <connections>
+                                    <action selector="feelGood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q7H-7z-g9Y"/>
+                                    <segue destination="18f-kx-kcO" kind="custom" identifier="GoodMoodSegue" customClass="MoodSegue" customModule="TakeOff" id="H57-aD-UHD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nAH-Uv-BfR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0MJ-cN-bQN"/>
+                            <constraint firstItem="1Wf-W5-vpR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="1jV-pZ-ESh"/>
+                            <constraint firstItem="Sn2-0k-XQ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B4d-c3-myE"/>
+                            <constraint firstItem="8AT-Gc-Fzs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IQA-tz-Cae"/>
+                            <constraint firstItem="zIq-pe-89Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NwL-Tz-MBX"/>
+                            <constraint firstItem="K8E-CJ-iFP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Osn-Ro-th5"/>
+                            <constraint firstItem="8AT-Gc-Fzs" firstAttribute="top" secondItem="xsh-XE-RFS" secondAttribute="bottom" constant="30" id="R8n-xj-cZZ"/>
+                            <constraint firstItem="xsh-XE-RFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YhE-bL-KBs"/>
+                            <constraint firstItem="zIq-pe-89Y" firstAttribute="top" secondItem="nAH-Uv-BfR" secondAttribute="bottom" constant="30" id="Ze4-N6-ZNY"/>
+                            <constraint firstItem="xsh-XE-RFS" firstAttribute="top" secondItem="1Wf-W5-vpR" secondAttribute="bottom" constant="71.5" id="a6D-3q-Km8"/>
+                            <constraint firstItem="1Wf-W5-vpR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0D-zB-xKK"/>
+                            <constraint firstItem="nAH-Uv-BfR" firstAttribute="top" secondItem="8AT-Gc-Fzs" secondAttribute="bottom" constant="30" id="k15-gJ-xNq"/>
+                            <constraint firstItem="Sn2-0k-XQ0" firstAttribute="top" secondItem="K8E-CJ-iFP" secondAttribute="bottom" constant="30" id="mCW-3Y-efd"/>
+                            <constraint firstItem="K8E-CJ-iFP" firstAttribute="top" secondItem="zIq-pe-89Y" secondAttribute="bottom" constant="30" id="pfv-DN-Sdt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Advice View Controller-->
+        <scene sceneID="B6W-Gd-IXe">
+            <objects>
+                <viewController id="18f-kx-kcO" customClass="AdviceViewController" customModule="TakeOff" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XC9-S2-phJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="SZ7-qY-tOY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Rn-To-T19">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That's great! Here's a tip to keep the good feeling going:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpJ-NX-dij">
+                                <rect key="frame" x="37.5" y="28" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="U6w-7D-P8n"/>
+                                    <constraint firstAttribute="height" constant="100" id="XdH-dO-N8a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use all the good energy you have right now and spread it around! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGF-KL-xiB">
+                                <rect key="frame" x="62.5" y="169" width="250" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="l3C-Ek-HgK"/>
+                                    <constraint firstAttribute="height" constant="400" id="nss-tP-wPt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="xbp-Fu-Ise"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzJ-QM-FVa">
+                                <rect key="frame" x="149" y="611" width="76" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="TCL-ko-4vl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QpJ-NX-dij" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="JYz-Hq-zc7"/>
+                            <constraint firstItem="AGF-KL-xiB" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="Kfq-4d-dV8"/>
+                            <constraint firstItem="QpJ-NX-dij" firstAttribute="top" secondItem="XC9-S2-phJ" secondAttribute="bottom" constant="8" id="Oac-5g-djP"/>
+                            <constraint firstItem="AGF-KL-xiB" firstAttribute="top" secondItem="QpJ-NX-dij" secondAttribute="bottom" constant="41" id="e4X-TU-0pw"/>
+                            <constraint firstItem="SZ7-qY-tOY" firstAttribute="top" secondItem="WzJ-QM-FVa" secondAttribute="bottom" constant="20" id="hAZ-hT-IAk"/>
+                            <constraint firstItem="WzJ-QM-FVa" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="pgQ-fE-0yi"/>
+                            <constraint firstItem="QpJ-NX-dij" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="vCQ-Eh-ftH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="AGF-KL-xiB" id="weQ-ic-EZZ"/>
+                        <outlet property="headerLabel" destination="QpJ-NX-dij" id="2Yf-Pd-7fg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FDj-u7-9mA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943.20000000000005" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>

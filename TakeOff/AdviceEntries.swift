@@ -28,7 +28,7 @@ class AdviceEntries: NSObject {
             "Go home and punch a pillow!",
             "Think about the reason you're angry and think about pants-ing it",
             "Remember that karmic justice is totally a thing !! Your anger will not go unnoticed in the karmic cycle"
-        ], "Overwhelmed": [
+        ], "Stressed": [
             "Try an emergency meditation by Calm (2, 5, or 10 minutes should do the trick)",
             "Tackling the big problems now will allow you to focus on the interesting, challenging problems later!",
             "Maybe it's time to walk away from the problem for a few minutes."
@@ -37,7 +37,7 @@ class AdviceEntries: NSObject {
             "Caffeine might get you more wired, but if you have a sleep headache, it should help",
             "Your brain is its most creative when it's sleepy -- use this exhaustion as creative fuel!"
         ]]
-    static var headers = ["Good": "That's great! Here's a tip to keep the good feeling going:", "Bad": "I'm sorry to hear that! Here's a little something to brighten your day:", "Grumpy":"Ugh I feel u, we all have days like that. Try this: ", "Angry":"UGH:", "Overwhelmed":"Take a deep breath and try this:", "Exhausted":"*yawn* maybe try one of these tricks:"];
+    static var headers = ["Good": "That's great! Here's a tip to keep the good feeling going:", "Bad": "I'm sorry to hear that! Here's a little something to brighten your day:", "Grumpy":"Ugh I feel u, we all have days like that. Try this: ", "Angry":"UGH:", "Stressed":"Take a deep breath and try this:", "Exhausted":"*yawn* maybe try one of these tricks:"];
     
 
     static func getRandomEntryFor(key: NSString, seen: Array<Int>) ->String? {

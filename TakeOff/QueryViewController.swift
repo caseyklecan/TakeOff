@@ -13,7 +13,7 @@ enum Mood {
     case Bad
     case Grumpy
     case Angry
-    case Overwhelmed
+    case Stressed
     case Exhausted
     case NoneSelected
 }
@@ -21,6 +21,22 @@ enum Mood {
 class QueryViewController: UIViewController {
     
     private var currentMood = Mood.NoneSelected
+    
+    @IBOutlet weak var goodButton: UIButton!
+    @IBOutlet weak var badButton: UIButton!
+    @IBOutlet weak var grumpyButton: UIButton!
+    @IBOutlet weak var angryButton: UIButton!
+    @IBOutlet weak var stressButton: UIButton!
+    @IBOutlet weak var exhaustedButton: UIButton!
+    
+//    let goodImage = UIImage(named: "../good.png")
+//    let badImage = UIImage(named: "bad.png")
+//    let grumpyImage = UIImage(named: "grumpy.png")
+//    let angryImage = UIImage(named: "angry.png")
+//    let stressedImage = UIImage(named: "stressed.png")
+//    let exhaustedImage = UIImage(named: "exhausted.png")
+    
+    
 
     @IBAction func feelGood(_ sender: Any) {
 //        print("yay!")
@@ -45,7 +61,7 @@ class QueryViewController: UIViewController {
     
     @IBAction func feelSwamped(_ sender: Any) {
 //        print("ok, take a deep breath, i'm here for u -- try a 2 minute meditation")
-        currentMood = Mood.Overwhelmed
+        currentMood = Mood.Stressed
     }
     
     @IBAction func feelTired(_ sender: Any) {
@@ -59,7 +75,8 @@ class QueryViewController: UIViewController {
     
    override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        goodButton.setImage(goodImage, for: UIControlState.normal)
+//        print("set button image")
     }
 
     override func didReceiveMemoryWarning() {

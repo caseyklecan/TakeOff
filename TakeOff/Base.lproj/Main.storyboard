@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,61 +21,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="WWu-lE-EMH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wf-W5-vpR">
-                                <rect key="frame" x="58" y="60" width="259" height="33.5"/>
+                                <rect key="frame" x="62.5" y="60" width="250" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AT-Gc-Fzs">
-                                <rect key="frame" x="167.5" y="234" width="39" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Bad"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AT-Gc-Fzs">
+                                <rect key="frame" x="159.5" y="250" width="55" height="55"/>
+                                <state key="normal" backgroundImage="bad.png"/>
                                 <connections>
                                     <action selector="feelBad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjE-S0-mpU"/>
                                     <segue destination="18f-kx-kcO" kind="custom" identifier="BadMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="1wH-QE-n9z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAH-Uv-BfR">
-                                <rect key="frame" x="148" y="303" width="79" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Grumpy"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAH-Uv-BfR">
+                                <rect key="frame" x="160" y="335" width="55" height="55"/>
+                                <state key="normal" backgroundImage="grumpy.png"/>
                                 <connections>
                                     <action selector="feelGrumpy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0w-9e-MlJ"/>
                                     <segue destination="18f-kx-kcO" kind="custom" identifier="GrumpyMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="22R-1M-FTd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIq-pe-89Y">
-                                <rect key="frame" x="158" y="372" width="59" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Angry"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIq-pe-89Y">
+                                <rect key="frame" x="160" y="420" width="55" height="55"/>
+                                <state key="normal" backgroundImage="angry.png"/>
                                 <connections>
                                     <action selector="feelMad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jft-Gk-e9N"/>
                                     <segue destination="18f-kx-kcO" kind="custom" identifier="AngryMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="wzq-FX-tfy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-CJ-iFP">
-                                <rect key="frame" x="119" y="441" width="137" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Overwhelmed"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-CJ-iFP">
+                                <rect key="frame" x="160" y="505" width="55" height="55"/>
+                                <state key="normal" backgroundImage="stressed.png"/>
                                 <connections>
                                     <action selector="feelSwamped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIT-zO-VXa"/>
-                                    <segue destination="18f-kx-kcO" kind="custom" identifier="OverwhelmedMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="kQt-av-ilV"/>
+                                    <segue destination="18f-kx-kcO" kind="custom" identifier="StressedMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="kQt-av-ilV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-0k-XQ0">
-                                <rect key="frame" x="135.5" y="510" width="103" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Exhausted"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-0k-XQ0">
+                                <rect key="frame" x="159.5" y="590" width="55" height="55"/>
+                                <state key="normal" backgroundImage="exhausted.png"/>
                                 <connections>
                                     <action selector="feelTired:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXT-F3-PI4"/>
                                     <segue destination="18f-kx-kcO" kind="custom" identifier="ExhaustedMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="1Uq-6X-g1V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsh-XE-RFS">
-                                <rect key="frame" x="160" y="165" width="54" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Good"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsh-XE-RFS">
+                                <rect key="frame" x="159.5" y="165" width="55" height="55"/>
+                                <state key="normal" backgroundImage="good.png"/>
                                 <connections>
                                     <action selector="feelGood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q7H-7z-g9Y"/>
                                     <segue destination="18f-kx-kcO" kind="custom" identifier="GoodMoodSegue" customClass="MoodSegue" customModule="TakeOff" id="H57-aD-UHD"/>
@@ -85,21 +82,35 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nAH-Uv-BfR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0MJ-cN-bQN"/>
+                            <constraint firstAttribute="bottom" secondItem="WWu-lE-EMH" secondAttribute="bottom" id="1d6-3z-LgJ"/>
                             <constraint firstItem="1Wf-W5-vpR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="1jV-pZ-ESh"/>
                             <constraint firstItem="Sn2-0k-XQ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B4d-c3-myE"/>
                             <constraint firstItem="8AT-Gc-Fzs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IQA-tz-Cae"/>
                             <constraint firstItem="zIq-pe-89Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NwL-Tz-MBX"/>
                             <constraint firstItem="K8E-CJ-iFP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Osn-Ro-th5"/>
+                            <constraint firstAttribute="trailing" secondItem="WWu-lE-EMH" secondAttribute="trailing" id="OzZ-GJ-Kj2"/>
                             <constraint firstItem="8AT-Gc-Fzs" firstAttribute="top" secondItem="xsh-XE-RFS" secondAttribute="bottom" constant="30" id="R8n-xj-cZZ"/>
                             <constraint firstItem="xsh-XE-RFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YhE-bL-KBs"/>
+                            <constraint firstItem="WWu-lE-EMH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZSH-6g-8G0"/>
                             <constraint firstItem="zIq-pe-89Y" firstAttribute="top" secondItem="nAH-Uv-BfR" secondAttribute="bottom" constant="30" id="Ze4-N6-ZNY"/>
                             <constraint firstItem="xsh-XE-RFS" firstAttribute="top" secondItem="1Wf-W5-vpR" secondAttribute="bottom" constant="71.5" id="a6D-3q-Km8"/>
+                            <constraint firstItem="WWu-lE-EMH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cf1-Vt-Lvk"/>
+                            <constraint firstItem="WWu-lE-EMH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hZj-4d-NpZ"/>
                             <constraint firstItem="1Wf-W5-vpR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0D-zB-xKK"/>
                             <constraint firstItem="nAH-Uv-BfR" firstAttribute="top" secondItem="8AT-Gc-Fzs" secondAttribute="bottom" constant="30" id="k15-gJ-xNq"/>
                             <constraint firstItem="Sn2-0k-XQ0" firstAttribute="top" secondItem="K8E-CJ-iFP" secondAttribute="bottom" constant="30" id="mCW-3Y-efd"/>
                             <constraint firstItem="K8E-CJ-iFP" firstAttribute="top" secondItem="zIq-pe-89Y" secondAttribute="bottom" constant="30" id="pfv-DN-Sdt"/>
+                            <constraint firstItem="WWu-lE-EMH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="v6G-pl-pZg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="angryButton" destination="zIq-pe-89Y" id="iVf-wr-h1b"/>
+                        <outlet property="badButton" destination="8AT-Gc-Fzs" id="mtW-w7-RL0"/>
+                        <outlet property="exhaustedButton" destination="Sn2-0k-XQ0" id="P4U-Ag-PyV"/>
+                        <outlet property="goodButton" destination="xsh-XE-RFS" id="j8t-e8-JIv"/>
+                        <outlet property="grumpyButton" destination="nAH-Uv-BfR" id="RFW-ek-yU0"/>
+                        <outlet property="stressButton" destination="K8E-CJ-iFP" id="faY-uE-K2y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,6 +128,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="advice-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="eZp-kl-AMf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That's great! Here's a tip to keep the good feeling going:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpJ-NX-dij">
                                 <rect key="frame" x="37.5" y="28" width="300" height="100"/>
                                 <constraints>
@@ -124,7 +138,7 @@
                                     <constraint firstAttribute="height" constant="100" id="XdH-dO-N8a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use all the good energy you have right now and spread it around! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGF-KL-xiB">
@@ -135,13 +149,14 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="xbp-Fu-Ise"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzJ-QM-FVa">
-                                <rect key="frame" x="149" y="611" width="76" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Go Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzJ-QM-FVa">
+                                <rect key="frame" x="157" y="587" width="60" height="60"/>
+                                <state key="normal" image="smile.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="BackSegue" id="TCL-ko-4vl"/>
                                 </connections>
@@ -149,10 +164,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eZp-kl-AMf" firstAttribute="centerY" secondItem="8Rn-To-T19" secondAttribute="centerY" id="3iv-Df-RrQ"/>
+                            <constraint firstItem="eZp-kl-AMf" firstAttribute="leading" secondItem="8Rn-To-T19" secondAttribute="leading" id="FJ3-0t-2MX"/>
                             <constraint firstItem="QpJ-NX-dij" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="JYz-Hq-zc7"/>
                             <constraint firstItem="AGF-KL-xiB" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="Kfq-4d-dV8"/>
                             <constraint firstItem="QpJ-NX-dij" firstAttribute="top" secondItem="XC9-S2-phJ" secondAttribute="bottom" constant="8" id="Oac-5g-djP"/>
+                            <constraint firstAttribute="bottom" secondItem="eZp-kl-AMf" secondAttribute="bottom" id="REM-2B-Hco"/>
+                            <constraint firstAttribute="trailing" secondItem="eZp-kl-AMf" secondAttribute="trailing" id="Y6k-Uu-7OR"/>
+                            <constraint firstItem="eZp-kl-AMf" firstAttribute="top" secondItem="8Rn-To-T19" secondAttribute="top" id="dcA-aW-HCU"/>
                             <constraint firstItem="AGF-KL-xiB" firstAttribute="top" secondItem="QpJ-NX-dij" secondAttribute="bottom" constant="41" id="e4X-TU-0pw"/>
+                            <constraint firstItem="eZp-kl-AMf" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="h1h-Sv-upp"/>
                             <constraint firstItem="SZ7-qY-tOY" firstAttribute="top" secondItem="WzJ-QM-FVa" secondAttribute="bottom" constant="20" id="hAZ-hT-IAk"/>
                             <constraint firstItem="WzJ-QM-FVa" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="pgQ-fE-0yi"/>
                             <constraint firstItem="QpJ-NX-dij" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="vCQ-Eh-ftH"/>
@@ -168,7 +189,18 @@
             <point key="canvasLocation" x="943.20000000000005" y="135.38230884557723"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="advice-bg.png" width="414" height="736"/>
+        <image name="angry.png" width="55" height="55"/>
+        <image name="bad.png" width="55" height="55"/>
+        <image name="exhausted.png" width="55" height="55"/>
+        <image name="good.png" width="55" height="55"/>
+        <image name="grumpy.png" width="55" height="55"/>
+        <image name="main-bg.png" width="414" height="736"/>
+        <image name="smile.png" width="60" height="60"/>
+        <image name="stressed.png" width="55" height="55"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1Uq-6X-g1V"/>
+        <segue reference="wzq-FX-tfy"/>
     </inferredMetricsTieBreakers>
 </document>

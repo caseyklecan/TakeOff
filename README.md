@@ -11,10 +11,10 @@ What _this_ TakeOff app does is as follows:
 
 ### To Do
 - [x] add gradients to view controllers (programmatically? background image?)
-- [ ] import a custom font to use
-- [ ] create launch screen
+- [x] import a custom font to use
+- [x] create launch screen
 - [x] create app icon
 - [x] switch mood buttons to be emojis
-- [ ] keep track of which moments of advice the user has seen / not
+- [ ] ~~keep track of which moments of advice the user has seen / not~~
 - [ ] get advice options from a server / backend??
-- [ ] track user data in a way that could be useful ?? 
+- [ ] ~~track user data in a way that could be useful~~

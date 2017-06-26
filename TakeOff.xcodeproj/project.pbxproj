@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0919484F1F018019007CF464 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0919484E1F018008007CF464 /* Quicksand-Regular.ttf */; };
 		0930BAF71F00DE13001AB087 /* MoodSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930BAF61F00DE04001AB087 /* MoodSegue.swift */; };
 		09A9C1571EF87F3800F6A833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9C1561EF87F3800F6A833 /* AppDelegate.swift */; };
 		09A9C1591EF87F3800F6A833 /* QueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9C1581EF87F3800F6A833 /* QueryViewController.swift */; };
@@ -15,7 +16,8 @@
 		09A9C1611EF87F3800F6A833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A9C15F1EF87F3800F6A833 /* LaunchScreen.storyboard */; };
 		09A9C16C1EF87F3800F6A833 /* TakeOffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9C16B1EF87F3800F6A833 /* TakeOffTests.swift */; };
 		09A9C1771EF87F3800F6A833 /* TakeOffUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9C1761EF87F3800F6A833 /* TakeOffUITests.swift */; };
-		09C24CFB1F00D2ED0003F30E /* advice-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C24CF91F00D2520003F30E /* advice-bg.png */; };
+		09ABF0261F0183BC009E94CD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 09ABF0231F01832D009E94CD /* logo.png */; };
+		09ABF0271F0183C0009E94CD /* blue-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 09ABF0251F01832D009E94CD /* blue-bg.png */; };
 		09C24CFC1F00D2F00003F30E /* main-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C24CFA1F00D2750003F30E /* main-bg.png */; };
 		09C24D041F00DA300003F30E /* angry.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C24D031F00D4B70003F30E /* angry.png */; };
 		09C24D051F00DA320003F30E /* bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C24D011F00D4B70003F30E /* bad.png */; };
@@ -26,6 +28,7 @@
 		09C24D0A1F00DA3C0003F30E /* stressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C24CFE1F00D4B60003F30E /* stressed.png */; };
 		09DB9A751EF8AD8200930CDD /* AdviceEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB9A741EF8AD8200930CDD /* AdviceEntries.swift */; };
 		09DB9A771EF8BB0700930CDD /* AdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB9A761EF8BB0700930CDD /* AdviceViewController.swift */; };
+		09F6D5C11F017A46008868AD /* BackSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F6D5C01F017A46008868AD /* BackSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0919484E1F018008007CF464 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		0930BAF61F00DE04001AB087 /* MoodSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSegue.swift; sourceTree = "<group>"; };
 		09A9C1531EF87F3800F6A833 /* TakeOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A9C1561EF87F3800F6A833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +64,8 @@
 		09A9C1721EF87F3800F6A833 /* TakeOffUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeOffUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A9C1761EF87F3800F6A833 /* TakeOffUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOffUITests.swift; sourceTree = "<group>"; };
 		09A9C1781EF87F3800F6A833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09C24CF91F00D2520003F30E /* advice-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "advice-bg.png"; path = "TakeOff-Icon/backgrounds/advice-bg.png"; sourceTree = "<group>"; };
+		09ABF0231F01832D009E94CD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "TakeOff-Icon/backgrounds/logo.png"; sourceTree = "<group>"; };
+		09ABF0251F01832D009E94CD /* blue-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blue-bg.png"; path = "TakeOff-Icon/backgrounds/blue-bg.png"; sourceTree = "<group>"; };
 		09C24CFA1F00D2750003F30E /* main-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "main-bg.png"; path = "TakeOff-Icon/backgrounds/main-bg.png"; sourceTree = "<group>"; };
 		09C24CFD1F00D4B60003F30E /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smile.png; path = "TakeOff-Icon/emojis/smile.png"; sourceTree = "<group>"; };
 		09C24CFE1F00D4B60003F30E /* stressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stressed.png; path = "TakeOff-Icon/emojis/stressed.png"; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 		09C24D031F00D4B70003F30E /* angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = angry.png; path = "TakeOff-Icon/emojis/angry.png"; sourceTree = "<group>"; };
 		09DB9A741EF8AD8200930CDD /* AdviceEntries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdviceEntries.swift; sourceTree = "<group>"; };
 		09DB9A761EF8BB0700930CDD /* AdviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdviceViewController.swift; sourceTree = "<group>"; };
+		09F6D5C01F017A46008868AD /* BackSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +111,6 @@
 				09A9C16A1EF87F3800F6A833 /* TakeOffTests */,
 				09A9C1751EF87F3800F6A833 /* TakeOffUITests */,
 				09A9C1541EF87F3800F6A833 /* Products */,
-				09C24CF91F00D2520003F30E /* advice-bg.png */,
-				09C24CFA1F00D2750003F30E /* main-bg.png */,
 				09C24D031F00D4B70003F30E /* angry.png */,
 				09C24D011F00D4B70003F30E /* bad.png */,
 				09C24D001F00D4B70003F30E /* exhausted.png */,
@@ -114,6 +118,10 @@
 				09C24CFF1F00D4B70003F30E /* grumpy.png */,
 				09C24CFD1F00D4B60003F30E /* smile.png */,
 				09C24CFE1F00D4B60003F30E /* stressed.png */,
+				09C24CFA1F00D2750003F30E /* main-bg.png */,
+				09ABF0251F01832D009E94CD /* blue-bg.png */,
+				09ABF0231F01832D009E94CD /* logo.png */,
+				0919484E1F018008007CF464 /* Quicksand-Regular.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +147,7 @@
 				09A9C15D1EF87F3800F6A833 /* Assets.xcassets */,
 				09A9C15F1EF87F3800F6A833 /* LaunchScreen.storyboard */,
 				09A9C1621EF87F3800F6A833 /* Info.plist */,
+				09F6D5C01F017A46008868AD /* BackSegue.swift */,
 			);
 			path = TakeOff;
 			sourceTree = "<group>";
@@ -274,13 +283,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09ABF0261F0183BC009E94CD /* logo.png in Resources */,
 				09C24CFC1F00D2F00003F30E /* main-bg.png in Resources */,
+				09ABF0271F0183C0009E94CD /* blue-bg.png in Resources */,
 				09A9C1611EF87F3800F6A833 /* LaunchScreen.storyboard in Resources */,
 				09C24D071F00DA360003F30E /* good.png in Resources */,
 				09A9C15E1EF87F3800F6A833 /* Assets.xcassets in Resources */,
 				09C24D0A1F00DA3C0003F30E /* stressed.png in Resources */,
 				09C24D061F00DA340003F30E /* exhausted.png in Resources */,
-				09C24CFB1F00D2ED0003F30E /* advice-bg.png in Resources */,
+				0919484F1F018019007CF464 /* Quicksand-Regular.ttf in Resources */,
 				09C24D091F00DA3A0003F30E /* smile.png in Resources */,
 				09C24D051F00DA320003F30E /* bad.png in Resources */,
 				09A9C15C1EF87F3800F6A833 /* Main.storyboard in Resources */,
@@ -310,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F6D5C11F017A46008868AD /* BackSegue.swift in Sources */,
 				09DB9A751EF8AD8200930CDD /* AdviceEntries.swift in Sources */,
 				09A9C1591EF87F3800F6A833 /* QueryViewController.swift in Sources */,
 				0930BAF71F00DE13001AB087 /* MoodSegue.swift in Sources */,

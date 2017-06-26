@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Query View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -25,13 +30,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wf-W5-vpR">
-                                <rect key="frame" x="62.5" y="60" width="250" height="33.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <rect key="frame" x="27.5" y="60" width="320" height="40"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="34"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AT-Gc-Fzs">
-                                <rect key="frame" x="159.5" y="250" width="55" height="55"/>
+                                <rect key="frame" x="159.5" y="230" width="55" height="55"/>
                                 <state key="normal" backgroundImage="bad.png"/>
                                 <connections>
                                     <action selector="feelBad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjE-S0-mpU"/>
@@ -39,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAH-Uv-BfR">
-                                <rect key="frame" x="160" y="335" width="55" height="55"/>
+                                <rect key="frame" x="160" y="315" width="55" height="55"/>
                                 <state key="normal" backgroundImage="grumpy.png"/>
                                 <connections>
                                     <action selector="feelGrumpy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0w-9e-MlJ"/>
@@ -47,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIq-pe-89Y">
-                                <rect key="frame" x="160" y="420" width="55" height="55"/>
+                                <rect key="frame" x="160" y="400" width="55" height="55"/>
                                 <state key="normal" backgroundImage="angry.png"/>
                                 <connections>
                                     <action selector="feelMad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jft-Gk-e9N"/>
@@ -55,7 +60,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-CJ-iFP">
-                                <rect key="frame" x="160" y="505" width="55" height="55"/>
+                                <rect key="frame" x="160" y="485" width="55" height="55"/>
                                 <state key="normal" backgroundImage="stressed.png"/>
                                 <connections>
                                     <action selector="feelSwamped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIT-zO-VXa"/>
@@ -63,7 +68,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-0k-XQ0">
-                                <rect key="frame" x="159.5" y="590" width="55" height="55"/>
+                                <rect key="frame" x="159.5" y="570" width="55" height="55"/>
                                 <state key="normal" backgroundImage="exhausted.png"/>
                                 <connections>
                                     <action selector="feelTired:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXT-F3-PI4"/>
@@ -71,7 +76,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsh-XE-RFS">
-                                <rect key="frame" x="159.5" y="165" width="55" height="55"/>
+                                <rect key="frame" x="159.5" y="145" width="55" height="55"/>
                                 <state key="normal" backgroundImage="good.png"/>
                                 <connections>
                                     <action selector="feelGood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q7H-7z-g9Y"/>
@@ -93,7 +98,7 @@
                             <constraint firstItem="xsh-XE-RFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YhE-bL-KBs"/>
                             <constraint firstItem="WWu-lE-EMH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZSH-6g-8G0"/>
                             <constraint firstItem="zIq-pe-89Y" firstAttribute="top" secondItem="nAH-Uv-BfR" secondAttribute="bottom" constant="30" id="Ze4-N6-ZNY"/>
-                            <constraint firstItem="xsh-XE-RFS" firstAttribute="top" secondItem="1Wf-W5-vpR" secondAttribute="bottom" constant="71.5" id="a6D-3q-Km8"/>
+                            <constraint firstItem="xsh-XE-RFS" firstAttribute="top" secondItem="1Wf-W5-vpR" secondAttribute="bottom" constant="45" id="a6D-3q-Km8"/>
                             <constraint firstItem="WWu-lE-EMH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cf1-Vt-Lvk"/>
                             <constraint firstItem="WWu-lE-EMH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hZj-4d-NpZ"/>
                             <constraint firstItem="1Wf-W5-vpR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0D-zB-xKK"/>
@@ -128,37 +133,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="advice-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="eZp-kl-AMf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="eZp-kl-AMf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That's great! Here's a tip to keep the good feeling going:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpJ-NX-dij">
-                                <rect key="frame" x="37.5" y="28" width="300" height="100"/>
+                                <rect key="frame" x="38" y="28" width="300" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="U6w-7D-P8n"/>
-                                    <constraint firstAttribute="height" constant="100" id="XdH-dO-N8a"/>
+                                    <constraint firstAttribute="height" constant="150" id="XdH-dO-N8a"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use all the good energy you have right now and spread it around! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGF-KL-xiB">
-                                <rect key="frame" x="62.5" y="169" width="250" height="400"/>
+                                <rect key="frame" x="62.5" y="193" width="250" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="l3C-Ek-HgK"/>
                                     <constraint firstAttribute="height" constant="400" id="nss-tP-wPt"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="xbp-Fu-Ise"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzJ-QM-FVa">
-                                <rect key="frame" x="157" y="587" width="60" height="60"/>
+                                <rect key="frame" x="157" y="577" width="60" height="60"/>
                                 <state key="normal" image="smile.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="BackSegue" id="TCL-ko-4vl"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="BackSegue" customClass="BackSegue" customModule="TakeOff" id="TCL-ko-4vl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -172,9 +177,9 @@
                             <constraint firstAttribute="bottom" secondItem="eZp-kl-AMf" secondAttribute="bottom" id="REM-2B-Hco"/>
                             <constraint firstAttribute="trailing" secondItem="eZp-kl-AMf" secondAttribute="trailing" id="Y6k-Uu-7OR"/>
                             <constraint firstItem="eZp-kl-AMf" firstAttribute="top" secondItem="8Rn-To-T19" secondAttribute="top" id="dcA-aW-HCU"/>
-                            <constraint firstItem="AGF-KL-xiB" firstAttribute="top" secondItem="QpJ-NX-dij" secondAttribute="bottom" constant="41" id="e4X-TU-0pw"/>
+                            <constraint firstItem="AGF-KL-xiB" firstAttribute="top" secondItem="QpJ-NX-dij" secondAttribute="bottom" constant="15" id="e4X-TU-0pw"/>
                             <constraint firstItem="eZp-kl-AMf" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="h1h-Sv-upp"/>
-                            <constraint firstItem="SZ7-qY-tOY" firstAttribute="top" secondItem="WzJ-QM-FVa" secondAttribute="bottom" constant="20" id="hAZ-hT-IAk"/>
+                            <constraint firstItem="SZ7-qY-tOY" firstAttribute="top" secondItem="WzJ-QM-FVa" secondAttribute="bottom" constant="30" id="hAZ-hT-IAk"/>
                             <constraint firstItem="WzJ-QM-FVa" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="pgQ-fE-0yi"/>
                             <constraint firstItem="QpJ-NX-dij" firstAttribute="centerX" secondItem="8Rn-To-T19" secondAttribute="centerX" id="vCQ-Eh-ftH"/>
                         </constraints>
@@ -190,7 +195,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="advice-bg.png" width="414" height="736"/>
         <image name="angry.png" width="55" height="55"/>
         <image name="bad.png" width="55" height="55"/>
         <image name="exhausted.png" width="55" height="55"/>

@@ -11,10 +11,8 @@ import UIKit
 class MoodSegue: UIStoryboardSegue {
     
     override func perform() {
-        // TODO
         let mood = (source as! QueryViewController).getMood()
         setDestinationValues(mood: mood)
-//        super.perform()
         
     }
     
@@ -34,9 +32,9 @@ class MoodSegue: UIStoryboardSegue {
         case .Grumpy:
             advice = AdviceEntries.getRandomEntryFor(key: "Grumpy", seen: [])
             header = AdviceEntries.getHeaderFor(key: "Grumpy")
-        case .Overwhelmed:
-            advice = AdviceEntries.getRandomEntryFor(key: "Overwhelmed", seen: [])
-            header = AdviceEntries.getHeaderFor(key: "Overwhelmed")
+        case .Stressed:
+            advice = AdviceEntries.getRandomEntryFor(key: "Stressed", seen: [])
+            header = AdviceEntries.getHeaderFor(key: "Stressed")
         case .Exhausted:
             advice = AdviceEntries.getRandomEntryFor(key: "Exhausted", seen: [])
             header = AdviceEntries.getHeaderFor(key: "Exhausted")

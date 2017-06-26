@@ -35,7 +35,7 @@
                                 <state key="normal" backgroundImage="bad.png"/>
                                 <connections>
                                     <action selector="feelBad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjE-S0-mpU"/>
-                                    <segue destination="18f-kx-kcO" kind="custom" identifier="BadMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="1wH-QE-n9z"/>
+                                    <segue destination="18f-kx-kcO" kind="custom" identifier="BadMoodSegue" customClass="MoodSegue" customModule="TakeOff" id="1wH-QE-n9z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAH-Uv-BfR">
@@ -43,7 +43,7 @@
                                 <state key="normal" backgroundImage="grumpy.png"/>
                                 <connections>
                                     <action selector="feelGrumpy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0w-9e-MlJ"/>
-                                    <segue destination="18f-kx-kcO" kind="custom" identifier="GrumpyMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="22R-1M-FTd"/>
+                                    <segue destination="18f-kx-kcO" kind="custom" identifier="GrumpyMoodSegue" customClass="MoodSegue" customModule="TakeOff" id="22R-1M-FTd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIq-pe-89Y">
@@ -51,7 +51,7 @@
                                 <state key="normal" backgroundImage="angry.png"/>
                                 <connections>
                                     <action selector="feelMad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jft-Gk-e9N"/>
-                                    <segue destination="18f-kx-kcO" kind="custom" identifier="AngryMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="wzq-FX-tfy"/>
+                                    <segue destination="18f-kx-kcO" kind="custom" identifier="AngryMoodSegue" customClass="MoodSegue" customModule="TakeOff" id="wzq-FX-tfy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-CJ-iFP">
@@ -59,7 +59,7 @@
                                 <state key="normal" backgroundImage="stressed.png"/>
                                 <connections>
                                     <action selector="feelSwamped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIT-zO-VXa"/>
-                                    <segue destination="18f-kx-kcO" kind="custom" identifier="StressedMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="kQt-av-ilV"/>
+                                    <segue destination="18f-kx-kcO" kind="custom" identifier="StressedMoodSegue" customClass="MoodSegue" customModule="TakeOff" id="kQt-av-ilV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-0k-XQ0">
@@ -67,7 +67,7 @@
                                 <state key="normal" backgroundImage="exhausted.png"/>
                                 <connections>
                                     <action selector="feelTired:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXT-F3-PI4"/>
-                                    <segue destination="18f-kx-kcO" kind="custom" identifier="ExhaustedMoodSegue" customClass="MoodSegue" customModule="TakeOff" customModuleProvider="target" id="1Uq-6X-g1V"/>
+                                    <segue destination="18f-kx-kcO" kind="custom" identifier="ExhaustedMoodSegue" customClass="MoodSegue" customModule="TakeOff" id="1Uq-6X-g1V"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsh-XE-RFS">
@@ -201,6 +201,6 @@
         <image name="stressed.png" width="55" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wzq-FX-tfy"/>
+        <segue reference="1Uq-6X-g1V"/>
     </inferredMetricsTieBreakers>
 </document>

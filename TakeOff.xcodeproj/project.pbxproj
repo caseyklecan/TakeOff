@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0930BAF71F00DE13001AB087 /* MoodSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930BAF61F00DE04001AB087 /* MoodSegue.swift */; };
 		09A9C1571EF87F3800F6A833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9C1561EF87F3800F6A833 /* AppDelegate.swift */; };
 		09A9C1591EF87F3800F6A833 /* QueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9C1581EF87F3800F6A833 /* QueryViewController.swift */; };
 		09A9C15C1EF87F3800F6A833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A9C15A1EF87F3800F6A833 /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		09C24D081F00DA380003F30E /* grumpy.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C24CFF1F00D4B70003F30E /* grumpy.png */; };
 		09C24D091F00DA3A0003F30E /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C24CFD1F00D4B60003F30E /* smile.png */; };
 		09C24D0A1F00DA3C0003F30E /* stressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C24CFE1F00D4B60003F30E /* stressed.png */; };
-		09DB9A731EF8AA4100930CDD /* MoodSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB9A721EF8AA4100930CDD /* MoodSegue.swift */; };
 		09DB9A751EF8AD8200930CDD /* AdviceEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB9A741EF8AD8200930CDD /* AdviceEntries.swift */; };
 		09DB9A771EF8BB0700930CDD /* AdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB9A761EF8BB0700930CDD /* AdviceViewController.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0930BAF61F00DE04001AB087 /* MoodSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSegue.swift; sourceTree = "<group>"; };
 		09A9C1531EF87F3800F6A833 /* TakeOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A9C1561EF87F3800F6A833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A9C1581EF87F3800F6A833 /* QueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		09C24D011F00D4B70003F30E /* bad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bad.png; path = "TakeOff-Icon/emojis/bad.png"; sourceTree = "<group>"; };
 		09C24D021F00D4B70003F30E /* good.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = good.png; path = "TakeOff-Icon/emojis/good.png"; sourceTree = "<group>"; };
 		09C24D031F00D4B70003F30E /* angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = angry.png; path = "TakeOff-Icon/emojis/angry.png"; sourceTree = "<group>"; };
-		09DB9A721EF8AA4100930CDD /* MoodSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoodSegue.swift; path = ../MoodSegue.swift; sourceTree = "<group>"; };
 		09DB9A741EF8AD8200930CDD /* AdviceEntries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdviceEntries.swift; sourceTree = "<group>"; };
 		09DB9A761EF8BB0700930CDD /* AdviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdviceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,8 +130,8 @@
 		09A9C1551EF87F3800F6A833 /* TakeOff */ = {
 			isa = PBXGroup;
 			children = (
+				0930BAF61F00DE04001AB087 /* MoodSegue.swift */,
 				09A9C1561EF87F3800F6A833 /* AppDelegate.swift */,
-				09DB9A721EF8AA4100930CDD /* MoodSegue.swift */,
 				09DB9A761EF8BB0700930CDD /* AdviceViewController.swift */,
 				09DB9A741EF8AD8200930CDD /* AdviceEntries.swift */,
 				09A9C1581EF87F3800F6A833 /* QueryViewController.swift */,
@@ -312,7 +312,7 @@
 			files = (
 				09DB9A751EF8AD8200930CDD /* AdviceEntries.swift in Sources */,
 				09A9C1591EF87F3800F6A833 /* QueryViewController.swift in Sources */,
-				09DB9A731EF8AA4100930CDD /* MoodSegue.swift in Sources */,
+				0930BAF71F00DE13001AB087 /* MoodSegue.swift in Sources */,
 				09DB9A771EF8BB0700930CDD /* AdviceViewController.swift in Sources */,
 				09A9C1571EF87F3800F6A833 /* AppDelegate.swift in Sources */,
 			);

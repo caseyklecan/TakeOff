@@ -8,4 +8,4 @@ TakeOff is a startup / app in Doree Shafrir's amazing novel _Startup_. The premi
 2. Give you advice based on the mood you've input
 3. For now, that is all :)
 
-![alt-text](takeoff-home.png | width=150)
+![alt-text](takeoff-home.png)

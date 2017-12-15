@@ -7,3 +7,5 @@ TakeOff is a startup / app in Doree Shafrir's amazing novel _Startup_. The premi
 1. Rate your mood (choose from Good, Bad, Angry, Exhausted, Overwhelmed, and Grumpy)
 2. Give you advice based on the mood you've input
 3. For now, that is all :)
+
+![alt-text](takeoff-home.png)
